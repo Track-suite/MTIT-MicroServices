@@ -9,7 +9,7 @@ const {
   updatePayment,
 } = require("../controllers/payment.controller");
 
-//Register User
+//Register Payment
 router.route("/addpay").post(addPayment);
 router.route("/getpay").get(getPayment);
 router.route("/getpaybyid/:id").get(getPaymentById);

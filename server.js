@@ -11,7 +11,8 @@ app.use(cookieParser());
 app.use(cors());
 
 // import Routes
-// app.use('/api', require('./routes/Employee.Routes'))
+
+app.use("/api", require("./routes/payment.routs"));
 
 // Connect to mongodb
 const URI = process.env.MONGODB_URL;
