@@ -11,8 +11,12 @@ app.use(cookieParser());
 app.use(cors());
 
 // import Routes
-
+// payment router
 app.use("/api", require("./routes/payment.routs"));
+// delivery router
+app.use("/cdk", require("./routes/Delivery.routs"));
+
+
 
 // Connect to mongodb
 const URI = process.env.MONGODB_URL;
