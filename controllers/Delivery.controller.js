@@ -88,6 +88,7 @@ exports.updateDelivery = async (req, res) => {
 
   res.status(200).json({
     success: true,
+    message: "Your details were update!",
     delivery,
   });
 };
